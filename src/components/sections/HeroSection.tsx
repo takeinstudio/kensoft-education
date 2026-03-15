@@ -14,7 +14,8 @@ const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden">
     <div className="absolute inset-0">
       <img src={heroBg} alt="" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(8,14,30,0.9)_0%,rgba(42,12,28,0.82)_42%,rgba(122,22,40,0.72)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_84%_75%,rgba(255,255,255,0.08),transparent_30%)]" />
       <div className="absolute inset-0 noise-overlay" />
     </div>
 

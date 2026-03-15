@@ -45,22 +45,25 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
+                className={`group relative text-sm font-medium transition-colors duration-200 ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-foreground hover:text-primary"
                 }`}
               >
-                {link.label}
+                <span>{link.label}</span>
+                <span className="pointer-events-none absolute inset-x-0 -bottom-1 h-px overflow-hidden">
+                  <span className={`block h-full w-8 -translate-x-10 bg-[linear-gradient(90deg,transparent_0%,rgba(226,29,47,0.9)_55%,transparent_100%)] transition-transform duration-500 ${location.pathname === link.path ? "translate-x-[220%]" : "group-hover:translate-x-[220%]"}`} />
+                </span>
               </Link>
             ))}
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Link to="/courses" className="btn-outline text-xs px-4 py-2">
+            <Link to="/courses" className="btn-outline text-xs px-4 py-2 hover:-translate-y-0.5">
               Explore Courses
             </Link>
-            <Link to="/franchise" className="btn-primary text-xs px-4 py-2">
+            <Link to="/franchise" className="btn-primary text-xs px-4 py-2 hover:-translate-y-0.5">
               Apply Now
             </Link>
           </div>

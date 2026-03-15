@@ -21,7 +21,11 @@ const courses = [
   { title: "C / C++", duration: "4 Months", price: "6,000", image: courseCpp, desc: "Programming fundamentals with C and object-oriented C++ development." },
 ];
 
-const CoursesSection = () => {
+interface CoursesSectionProps {
+  compactTop?: boolean;
+}
+
+const CoursesSection = ({ compactTop = false }: CoursesSectionProps) => {
   const [enrollOpen, setEnrollOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState("");
 
@@ -31,7 +35,7 @@ const CoursesSection = () => {
   };
 
   return (
-    <section className="section-padding bg-background">
+    <section className={`${compactTop ? "px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-12 pb-16 sm:pb-20 lg:pb-24" : "section-padding"} bg-background`}>
       <div className="container-max">
         <SectionHeading
           label="Our Programs"
