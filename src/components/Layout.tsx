@@ -3,6 +3,7 @@ import TopBar from "./TopBar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollProgress from "./ScrollProgress";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Layout = () => (
   <>
@@ -12,6 +13,7 @@ const Layout = () => (
     <main>
       <Outlet />
     </main>
+    <WhatsAppButton />
     <Footer />
   </>
 );

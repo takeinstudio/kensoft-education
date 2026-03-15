@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, Youtube, ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.jpg";
@@ -24,7 +24,9 @@ const quickLinks = [
   { label: "Home",               path: "/" },
   { label: "About Us",           path: "/about" },
   { label: "Courses",            path: "/courses" },
+  { label: "Gallery",            path: "/gallery" },
   { label: "Franchise",          path: "/franchise" },
+  { label: "Testimonials",       path: "/testimonials" },
   { label: "Verify Certificate", path: "/verify" },
   { label: "Contact",            path: "/contact" },
 ];
@@ -251,8 +253,8 @@ const Footer = () => (
                 Icon: Phone,
                 content: (
                   <div className="text-sm text-primary-foreground/75 flex flex-col gap-0.5">
-                    <a href="tel:9238945751" className="hover:text-primary transition-colors">9238945751</a>
-                    <a href="tel:9040033305" className="hover:text-primary transition-colors">9040033305</a>
+                    <a href="tel:+919238945751" className="hover:text-primary transition-colors">+91 9238945751</a>
+                    <a href="tel:+919040033305" className="hover:text-primary transition-colors">+91 9040033305</a>
                   </div>
                 ),
               },

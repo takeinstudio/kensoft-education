@@ -9,7 +9,7 @@ const Courses = () => (
       title="Courses"
       description="From foundational computer skills to advanced programming, find the course that matches your career ambitions."
     />
-    <CoursesSection compactTop />
+    <CoursesSection compactTop showAll />
     <CTASection />
   </>
 );
