@@ -15,8 +15,8 @@ const infoCards = [
   {
     icon: Phone,
     title: "Phone",
-    lines: ["9238945751", "9040033305"],
-    href: "tel:9238945751",
+    lines: ["+91 9238945751", "+91 9040033305"],
+    href: "tel:+919238945751",
     color: "from-violet-500/20 to-violet-700/10",
     glow: "rgba(139,92,246,0.18)",
   },
@@ -199,7 +199,7 @@ const Contact = () => {
                       </div>
                       <div className="space-y-1">
                         <label className="text-xs font-semibold text-foreground/70 uppercase tracking-wide">Phone</label>
-                        <input required placeholder="9XXXXXXXXX" className={inputCls} />
+                        <input required placeholder="+91 9XXXXXXXXX" className={inputCls} />
                       </div>
                     </div>
 
